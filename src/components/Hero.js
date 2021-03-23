@@ -85,7 +85,7 @@ const Hero = () => {
   return (
     <Wrapper>
       <TextoPrincipal> Hi, I am <strong>Yanquiel Arango</strong></TextoPrincipal>
-      <Paragraph>front-end dev</Paragraph>
+      <Paragraph>Front-end dev</Paragraph>
       <Image  src={miFoto} />
     </Wrapper>
   )

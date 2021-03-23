@@ -33,8 +33,8 @@ const Wrapper = styled.section`
         padding-right: calc(200px + 4em); 
         background-color: #16e0bd;
         height: 5rem;
-        font-size: 2.3rem;
-        padding: .25em 1em;
+        font-size: 2rem;
+        padding: .55em 1em;
         margin: 0 auto;
         font-weight: 700;
         font-family: 'Roboto', serif;
@@ -102,7 +102,7 @@ const AboutMe = () => {
   return (
     <Wrapper>
       <TextoPrincipal>{titulo}</TextoPrincipal>
-      <ContenidoText>Frontend Developer</ContenidoText>
+      <ContenidoText>Frontend Developer💻</ContenidoText>
       <div>
         <p>{contenido}</p>
       </div>
