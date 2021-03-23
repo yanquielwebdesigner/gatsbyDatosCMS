@@ -1,10 +1,9 @@
 module.exports = {
-  /* siteMetadata: {
+   siteMetadata: {
     title: "yanquielwebdev",
     descripton: "web dev portfolio",
-    copyright: "This website is copyright 2021 yanquielwebdev",
-    siteUrl: "https://portfolio-site-461.admin.datocms.com"
-  }, */ 
+    copyright: "This website is copyright 2021 yanquielwebdev"   
+  }, 
   plugins: [
     {
       resolve: "gatsby-source-datocms",
@@ -26,7 +25,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        icon: "src/images/logo.png",
+        icon: "src/images/code.png",
       },
     },
     "gatsby-plugin-sharp",
