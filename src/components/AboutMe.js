@@ -1,7 +1,9 @@
 import React from 'react'
 import styled from '@emotion/styled'
-import {css} from '@emotion/react'
+import { graphql, useStaticQuery } from 'gatsby'
+
 import yag from '../images/yag.jpg'
+
 
 const Wrapper = styled.section`
     max-width: 1000px;
@@ -79,14 +81,33 @@ const TextoPrincipal = styled.h2`
 `;
 
 const AboutMe = () => {
+
+      const info = useStaticQuery(graphql`
+        query  {
+            allDatoCmsPagina(filter: {slug: {eq: "about"}}) {
+              nodes {
+                
+                titulo
+                contenido
+              }
+            }
+          }
+
+      
+      `);
+
+          console.log(info.allDatoCmsPagina.nodes); 
+          const {titulo, contenido }= info.allDatoCmsPagina.nodes[0];
+
   return (
     <Wrapper>
-      <TextoPrincipal>Who I am</TextoPrincipal>
+      <TextoPrincipal>{titulo}</TextoPrincipal>
       <ContenidoText>Frontend Developer</ContenidoText>
       <div>
-        <p>I describe myself as someone who's persistant, a quick learner and loves problem solvingby simple and scalable solution</p>
+        <p>{contenido}</p>
       </div>
       <Image src={yag} />
+      
     </Wrapper>
   )
 }

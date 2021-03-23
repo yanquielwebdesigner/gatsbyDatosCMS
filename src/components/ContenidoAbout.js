@@ -7,6 +7,7 @@ import SkillPreview from './skillPreview';
 
 
 
+
 const ImageBackground = styled(BackgroundImage)`
     height: 500px;
     width: 100%;
@@ -71,7 +72,7 @@ function ContenidoAbout() {
 
     const datos = useInformacion();
 
-    console.log(datos);
+    
   
 
           const { image } = useStaticQuery(graphql`
@@ -88,7 +89,7 @@ function ContenidoAbout() {
           
               `)
 
-              //console.log(image.childImageSharp.fluid);
+              
   return (
 
     <ImageBackground tag="section" fluid={image.childImageSharp.fluid} fadeIn="soft">

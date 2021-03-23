@@ -2,8 +2,9 @@ module.exports = {
   /* siteMetadata: {
     title: "yanquielwebdev",
     descripton: "web dev portfolio",
-    copyright: "This website is copyright 2021 yanquielwebdev"
-  }, */
+    copyright: "This website is copyright 2021 yanquielwebdev",
+    siteUrl: "https://portfolio-site-461.admin.datocms.com"
+  }, */ 
   plugins: [
     {
       resolve: "gatsby-source-datocms",
